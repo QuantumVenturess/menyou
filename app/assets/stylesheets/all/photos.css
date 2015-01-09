@@ -1,0 +1,48 @@
+/* Gallery */
+.grid {
+	display: none;
+	margin: 0 auto;
+}
+
+.photo {
+	border: 3px solid rgb(196, 43, 38);
+	position: absolute;
+	margin: 0 0 20px 0;
+	text-align: center;
+	width: 300px;
+}
+
+.photo img {
+	vertical-align: bottom;
+	max-width: 300px;
+}
+
+.photosPagination {
+    display: none;
+}
+
+/* Index */
+.photos {
+    color: rgb(60, 60, 60);
+    background: rgb(255, 255, 255);
+    border: 3px solid rgb(196, 43, 38);
+    padding: 20px;
+}
+
+.photos ol {
+    font-size: 14px;
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+
+.photos li {
+    margin: 0 0 5px 0;
+}
+
+.photos a {
+    color: rgb(48, 157, 207);
+}
+
+.photos a:hover {
+    color: rgb(60, 60, 60);
+}

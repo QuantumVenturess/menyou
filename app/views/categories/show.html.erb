@@ -1,0 +1,28 @@
+<div class="topButton">
+	<%= link_to('#', class: 'toTop') do %>
+		<div></div>
+	<% end %>
+</div>
+<div class="menuContainer">
+	<div class="menuSidebar">
+		<h1>Menu</h1>
+		<div class="menuCategories">
+			<ul>
+				<% @categories.each do |category| %>
+					<li><%= link_to category.name, category %></li>
+				<% end %>
+			</ul>
+		</div>
+	</div>
+	<div class="menus">
+		<div class="menu">
+			<%= link_to '', '#', class: "categoryWaypoint cat_#{@category.id}", name: "#{@category.name}" %>
+			<h1><%= @category.name %></h1>
+			<div class="menuItems">
+				<%= render @items %>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>

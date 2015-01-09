@@ -1,0 +1,14 @@
+<%= form_for @photo, html: { multipart: true } do |f| %>
+	<%= render 'shared/error_messages', object: f.object %>
+	<div class="field">
+		<p>Name</p>
+		<%= f.text_field :name, autocomplete: :off %>
+	</div>
+	<div class="field">
+		<%= f.file_field :file %>
+	</div>
+	<div class="action">
+		<%= f.submit 'Submit' %>
+		<%= link_to 'Photos', photos_path %>
+	</div>
+<% end %>

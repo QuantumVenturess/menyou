@@ -1,0 +1,17 @@
+.menuWayTop, .menuWayMid, .menuWayBot {
+	height: 1px;
+	position: absolute;
+	width: 100%;
+}
+
+.menuWayTop {
+	top: 150px;
+}
+
+.menuWayMid {
+	top: 200px;
+}
+
+.menuWayBot {
+	top: 250px;
+}

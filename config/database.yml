@@ -1,0 +1,14 @@
+development:
+  adapter:  postgresql
+  database: menyou_development
+  encoding: unicode
+  password: postgres
+  pool: 5
+  username: postgres
+test:
+  adapter:  postgresql
+  database: menyou_test
+  encoding: unicode
+  password: postgres
+  pool: 5
+  username: postgres

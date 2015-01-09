@@ -1,0 +1,47 @@
+<div class="topHeader"></div>
+<div class="socialMedia">
+	<div class="yelp">
+		<%= link_to('http://www.yelp.com/biz/golden-dragon-vista', target: '_blank') do %>
+			<%= image_tag '/assets/yelp.png' %>
+		<% end %>
+	</div>
+	<div class="facebook">
+		<div class="fb-like" data-send="false" data-width="450" data-show-faces="false" data-font="arial" data-href="<%= root_url %>"></div>
+	</div>
+	<div class="twitter">
+		<a href="https://twitter.com/share" class="twitter-share-button" data-related="jasoncosta" data-lang="en" data-size="small" data-count="none" data-url="<%= @short.shorten(request.url).shorturl %>" %>">Tweet</a>
+	</div>
+</div>
+<% if signed_in? %>
+	<div class="adminNav">
+		<ul>
+			<li><%= link_to 'New Item', new_item_path %></li>
+			<li><%= link_to 'New Photo', upload_path %></li>
+			<li><%= link_to 'New Chef', new_chef_path %></li>
+			<li><%= link_to 'Categories', new_category_path %></li>
+			<li><%= link_to 'Comments', comments_path %></li>
+			<li><%= link_to 'Sign Out', signout_path %></li>
+		</ul>
+	</div>
+<% end %>
+<div class="bottomHeader">
+	<div class="headerNav">
+		<div class="leftNav">
+			<%= link_to 'SIFU', chefs_path %>
+			<%= link_to 'ABOUT', about_path %>
+		</div>
+		<div class="rightNav">
+			<%= link_to 'MENU', menu_path %>
+			<%= link_to 'GALLERY', gallery_path %>
+		</div>
+	</div>
+	<div class="logo">
+		<div>
+			<%= link_to image_tag('/assets/golden_dragon.png'), root_path %>
+		</div>
+	</div>
+	<h1>Chinese Restaurant</h1>
+	<div class="menuWaypoint menuWayTop"></div>
+	<div class="menuWaypoint menuWayMid"></div>
+	<div class="menuWaypoint menuWayBot"></div>
+</div>

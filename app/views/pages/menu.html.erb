@@ -1,0 +1,21 @@
+<div class="topButton">
+	<%= link_to('#', class: 'toTop') do %>
+		<div></div>
+	<% end %>
+</div>
+<div class="menuContainer">
+	<div class="menuSidebar">
+		<h1>Menu</h1>
+		<div class="menuCategories">
+			<ul>
+				<% @categories.each do |category| %>
+					<li><%= link_to category.name, category %></li>
+				<% end %>
+			</ul>
+		</div>
+	</div>
+	<div class="menus">
+		<%= render @categories %>
+	</div>
+	<div class="clear"></div>
+</div>

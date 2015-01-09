@@ -1,0 +1,13 @@
+.mainContent {
+	background: rgb(220, 169, 116);
+	border: 5px solid rgb(196, 43, 38);
+	margin: 0 auto;
+	padding: 40px 20px;
+	width: 530px;
+	-webkit-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
+	-khtml-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
+	-ms-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
+	-o-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
+}

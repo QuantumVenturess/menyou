@@ -1,0 +1,53 @@
+<div class="aboutImages">
+	<div class="aboutImagesContainer" id="cycle">
+		<%= image_tag '/assets/rest1.jpg' %>
+		<%= image_tag '/assets/rest2.jpg' %>
+		<%= image_tag '/assets/rest3.jpg' %>
+		<%= image_tag '/assets/rest4.jpg' %>
+	</div>
+</div>
+<div class="aboutInfo">
+	<ul>
+		<li class="infoGroupSection">
+			<%= render 'shared/hours' %>
+		</li>
+		<li class="infoGroupSection">
+			<div class="infoGroup location">
+				<div class="infoGroupLabel">
+					<div class="leftBar"></div>
+					<div class="rightBar"></div>
+					<h1>Location</h1>
+				</div>
+				<div class="groupInfo">
+					<iframe width="240" height="240" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=1350+E+Vista+Way+Ste+10+Vista+Ca+92084&amp;aq=&amp;sll=32.824552,-117.108978&amp;sspn=0.665868,1.352692&amp;ie=UTF8&amp;hq=&amp;hnear=1350+E+Vista+Way+%2310,+Vista,+California+92084&amp;t=m&amp;ll=33.2188,-117.226353&amp;spn=0.017233,0.020514&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+					<div class="locationAddress">
+						<p>1350 E Vista Way Ste 10</p>
+						<p>Vista, CA 92084</p>
+						<p>Between Foothill Dr & Monte Mar Rd</p>
+						<%= link_to 'Get Directions', 'https://maps.google.com/maps?q=1350+E+Vista+Way+Ste+10+Vista+Ca+92084&hl=en&sll=32.824552,-117.108978&sspn=0.665868,1.352692&hnear=1350+E+Vista+Way+%2310,+Vista,+California+92084&t=m&z=16', target: '_blank' %>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="infoGroupSection">
+			<div class="infoGroup contact">
+				<div class="infoGroupLabel">
+					<div class="leftBar"></div>
+					<div class="rightBar"></div>
+					<h1>Contact</h1>
+				</div>
+				<div class="groupInfo">
+					<h2>Phone</h2>
+					<p>(760) 726-4246</p>
+					<h2>Fax</h2>
+					<p>(760) 726-4246</p>
+					<h2>Email</h2>
+					<p>hello@goldendragon.com</p>
+					<h2>Contact</h2>
+					<p><%= link_to 'Contact us here', '#', class: 'contactUs grey100' %></p>
+				</div>
+			</div>
+		</li>
+		<div class="clear"></div>
+	</ul>
+</div>

@@ -1,0 +1,16 @@
+.categoryList ol {
+	color: rgb(60, 60, 60);
+	font-size: 14px;
+	margin: 0 0 20px 0;
+	padding: 0 0 0 25px;
+}
+
+.categoryList a {
+	color: rgb(48, 157, 207);
+	display: block;
+	padding: 3px 0;
+}
+
+.categoryList a:hover {
+	color: rgb(60, 60, 60);
+}

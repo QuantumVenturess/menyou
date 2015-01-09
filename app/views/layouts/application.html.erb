@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><%= title %></title>
+		<%= stylesheet_link_tag 'all/application' %>
+		<!--[if !IE]><!-->
+			<%= stylesheet_link_tag 'nonie/application' %>
+		<!--<![endif]-->
+		<!--[if gte IE 9]>
+			<%= stylesheet_link_tag 'nonie/application' %>
+		<![endif]-->
+		<!--[if lt IE 9]>
+			<%= stylesheet_link_tag 'ie/application' %>
+		<![endif]-->
+		<%= stylesheet_link_tag    "print/application", media: :print %>
+		<%= javascript_include_tag "application" %>
+		<%= csrf_meta_tags %>
+		<%= favicon_link_tag 'favicon.ico' %>
+		<meta charset="UTF-8">
+		<meta property="og:title" content="Golden Dragon Restaurant">
+		<meta property="og:image" content="http://menyou.herokuapp.com/assets/logo.png">
+		<meta property="og:site_name" content="Golden Dragon">
+		<meta property="og:description" content="<%= meta_description %>">
+		<%= yield :head %>
+		<script>
+		// Facebook
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=160257407449032";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+		// Twitter
+		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+		</script>
+	</head>
+	<body>
+		<div id="fb-root"></div>
+		<div class="wrapper">
+			<div class="header">
+				<%= render 'layouts/header' %>
+			</div>
+			<div class="content">
+				<% flash.each do |key, value| %>
+					<div class="flash <%= key %>">
+						<%= link_to image_tag('/assets/close.png'), '#', class: 'closeFlash', title: "Close" %>
+						<p><%= value %></p>
+					</div>
+				<% end %>
+				<%= yield %>
+			</div>
+		</div>
+		<div class="footer">
+			<%= render 'layouts/footer' %>
+		</div>
+		<div class="commentForm">
+			<%= render 'comments/comment_form' %>
+		</div>
+	</body>
+</html>

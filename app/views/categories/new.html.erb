@@ -1,0 +1,25 @@
+<%= form_for @category, html: { multipart: true } do |f| %>
+	<div class="categoryList">
+		<ol>
+			<% @categories.each do |category| %>
+				<li><%= link_to category.name, edit_category_path(category), title: 'Edit' %></li>
+			<% end %>
+		</ol>
+	</div>
+	<%= render 'shared/error_messages', object: f.object %>
+	<div class="field">
+		<p>Name</p>
+		<%= f.text_field :name, autocomplete: :off %>
+	</div>
+	<div class="field">
+		<p>Image</p>
+		<%= f.file_field :image %>
+	</div>
+	<div class="action">
+		<%= f.submit 'Submit' %>
+		<%= link_to 'Cancel', new_category_path %>
+		<% if @category.deletable? %>
+			<%= link_to 'Delete', @category, method: :delete, confirm: 'Delete?' %>
+		<% end %>
+	</div>
+<% end %>

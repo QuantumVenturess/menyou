@@ -1,0 +1,74 @@
+html, body {
+	height: 100%;
+}
+
+body {
+/*
+	background-attachment: fixed;
+	background-image: url('/assets/background.jpg');
+	background-repeat: repeat;
+	background-position: top left;
+	background-size: cover;
+*/
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 0;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow-x: hidden;
+	width: 100%;
+}
+
+.content {
+	margin: 0 auto;
+	padding: 0 0 66px 0;
+	width: 1000px;
+}
+
+p {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	border: none;
+}
+
+.clear {
+	clear: both;
+	font-size: 1px;
+	height: 0;
+	margin: 0;
+	line-height: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: Chinese;
+	src: url('/assets/SF_Shai_Fontai.ttf'),
+		 url('/assets/SF_Shai_Fontai.eot');
+}
+
+.errorExplanation ul {
+	padding: 0 0 0 20px;
+	margin: 0 0 20px 0;
+}
+
+.errorExplanation ul li {
+	color: rgb(255, 25, 0);
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	padding: 5px;
+}
+
+.red {
+	color: rgb(255, 26, 0);
+}
+
+.grey100 {
+	color: rgb(100, 100, 100);
+}

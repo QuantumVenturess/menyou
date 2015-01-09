@@ -1,0 +1,42 @@
+<%= form_for @item, html: { multipart: true } do |f| %>
+	<%= render 'shared/error_messages', object: f.object %>
+	<div class="field">
+		<p>Name</p>
+		<%= f.text_field :name, autocomplete: :off %>
+	</div>
+	<div class="field">
+		<p>Price (Large Price)</p>
+		<%= f.text_field :large_price %>
+	</div>
+	<div class="field">
+		<p>Small Price</p>
+		<%= f.text_field :small_price %>
+	</div>
+	<div class="field">
+		<p>Category</p>
+		<%= f.select :category_id, category_list %>
+	</div>
+	<div class="field">
+		<p>Spicy</p>
+		<%= f.check_box :spicy %>
+	</div>
+	<div class="field">
+		<p>Image</p>
+		<%= f.file_field :image %>
+	</div>
+	<div class="field">
+		<p>Description</p>
+		<%= f.text_area :info %>
+	</div>
+	<div class="action">
+		<%= f.submit 'Submit' %>
+		<% if @item.category %>
+			<%= link_to 'Cancel', @item.category %>
+		<% else %>
+			<%= link_to 'Cancel', menu_path %>
+		<% end %>
+		<% if @item.deletable? %>
+			<%= link_to 'Delete', @item, method: :delete, confirm: 'Delete?' %>
+		<% end %>
+	</div>
+<% end %>

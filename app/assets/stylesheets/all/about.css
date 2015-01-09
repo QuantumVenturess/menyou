@@ -1,0 +1,74 @@
+/* Slides*/
+.aboutImages {
+	background: rgb(196, 43, 38);
+	border: 5px solid rgb(196, 43, 38);
+	height: 540px;
+	margin: 0 auto 40px auto;
+	text-align: center;
+	width: 720px;
+	-webkit-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
+	-khtml-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
+	-ms-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
+	-o-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.aboutImagesContainer {
+	height: 540px;
+	overflow: hidden;
+	position: absolute;
+	width: 720px;
+	z-index: 100;
+}
+
+.aboutImages img {
+	max-height: 540px;
+}
+
+.aboutImages h1 {
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 22px;
+	margin: 0;
+	position: relative;
+	top: 540px;
+}
+
+.aboutImages a {
+	color: rgb(60, 60, 60);
+	display: block;
+	padding: 15px 0;
+}
+
+.aboutImages a:hover {
+	color: rgb(235, 235, 235);
+}
+
+/* Hours, location, contact */
+.aboutInfo .infoGroup {
+	background: rgb(220, 169, 116);
+	border: 3px solid rgb(196, 43, 38);
+	padding: 20px;
+	-webkit-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
+	-khtml-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
+	-ms-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
+	-o-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.aboutInfo ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.infoGroupSection {
+	display: inline-block;
+	float: left;
+}
+
+.aboutInfo .location {
+	margin: 0 40px;
+}

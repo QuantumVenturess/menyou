@@ -1,0 +1,10 @@
+<div class="photos">
+	<ol>
+		<% @photos.each do |photo| %>
+			<li>
+				<%= link_to photo.name, photo.file.url, target: '_blank' %>
+				| <%= link_to 'Delete', photo, method: :delete, confirm: 'Delete?' %>
+			</li>
+		<% end %>
+	</ol>
+</div>

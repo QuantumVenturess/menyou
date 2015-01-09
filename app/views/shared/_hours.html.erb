@@ -1,0 +1,24 @@
+<div class="infoGroup hours">
+	<div class="infoGroupLabel">
+		<div class="leftBar"></div>
+		<div class="rightBar"></div>
+		<h1>Hours</h1>
+	</div>
+	<ul class="groupInfo">
+		<% weekdays.each do |day| %>
+			<li>
+				<div class="weekday">
+					<%= day %>
+				</div>
+				<div class="time">
+					<% if day == 'Friday' || day == 'Saturday' %>
+						11:00 AM - 09:30 PM
+					<% else %>
+						11:00 AM - 09:00 PM
+					<% end %>
+				</div>
+				<div class="clear"></div>
+			</li>
+		<% end %>
+	</ul>
+</div>

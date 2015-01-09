@@ -1,0 +1,22 @@
+<%= form_for @chef, html: { multipart: true } do |f| %>
+    <%= render 'shared/error_messages', object: f.object %>
+    <div class="field">
+        <p>Name</p>
+        <%= f.text_field :name, autocomplete: :off %>
+    </div>
+    <div class="field">
+        <p>Info</p>
+        <%= f.text_area :info %>
+    </div>
+    <div class="field">
+        <p>Image</p>
+        <%= f.file_field :image %>
+    </div>
+    <div class="action">
+        <%= f.submit 'Submit' %>
+        <%= link_to 'Cancel', chefs_path %>
+        <% if @chef.deletable? %>
+            <%= link_to 'Delete', @chef, method: :delete, confirm: 'Delete chef?' %>
+        <% end %>
+    </div>
+<% end %>

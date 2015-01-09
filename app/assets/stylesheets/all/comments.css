@@ -1,0 +1,180 @@
+/* Comment form */
+.commentForm {
+	background: rgb(70, 70, 70);
+	bottom: -215px;
+	padding: 0 10px;
+	position: fixed;
+	right: 10px;
+	width: 280px;
+	z-index: 100;
+}
+
+.commentFormHeader {
+	height: 15px;
+	padding: 5px 0 0 0;
+}
+
+.commentFormHeader:hover {
+	cursor: pointer;
+}
+
+.commentFormHeader h1 {
+	color: rgb(235, 235, 235);
+	float: left;
+	font-size: 14px;
+	font-weight: 300;
+	margin: 0;
+}
+
+.commentFormToggle {
+	float: right;
+}
+
+.commentFormShow, .commentFormHide {
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	height: 0;
+	position: relative;
+	top: 3px;
+	width: 0;
+}
+
+.commentFormShow {
+	border-bottom: 10px solid rgb(210, 210, 210);
+}
+
+.commentFormHide {
+	border-top: 10px solid rgb(210, 210, 210);
+	display: none;
+}
+
+.commentForm form {
+	background: none;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.commentForm .field {
+	margin: 10px 0 0 0;
+}
+
+.commentForm .field p {
+	color: rgb(235, 235, 235);
+	font-size: 14px;
+	margin: 0 0 5px 0;
+	text-align: right;
+}
+
+.commentForm .field input, .commentForm .field textarea {
+	border: 1px solid rgb(210, 210, 210);
+	color: rgb(70, 70, 70);
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	padding: 10px;
+	margin: 0;
+	width: 258px;
+}
+
+.commentForm .field textarea {
+	height: 70px;
+	resize: none;
+}
+
+.commentForm .field input:active, .commentForm .field input:focus, .commentForm .field textarea:active, .commentForm .field textarea:focus {
+	border: 1px solid rgb(140, 140, 140);
+	outline: none;
+}
+
+.commentForm .action {
+	margin: 0;
+	padding: 10px 0;
+}
+
+.commentForm .action input {
+	background: rgb(196, 43, 38);
+	border: none;
+	color: rgb(235, 235, 235);
+	float: right;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	margin: 0;
+	padding: 5px 10px;
+}
+
+.commentForm .action input:hover {
+	background: rgb(216, 63, 58);
+	cursor: pointer;
+}
+
+.commentForm .action input:focus {
+	background: rgb(216, 63, 58); 
+	outline: none;
+}
+
+.commentCounter {
+	color: rgb(210, 210, 210);
+	float: right;
+	font-size: 14px;
+	margin: 0 20px 0 0;
+	position: relative;
+	top: 5px;
+}
+
+/* Comment confirm */
+.commentConfirm {
+	padding: 10px 0;
+}
+
+.commentConfirm p {
+	color: rgb(235, 235, 235);
+	font-size: 14px;
+	line-height: 18px;
+	margin: 0 0 14px 0;
+}
+
+/* Comments index */
+.comments {
+	background: rgb(255, 255, 255);
+	border: 3px solid rgb(196, 43, 38);
+	padding: 20px;
+}
+
+.approved {
+	float: left;
+}
+
+.pending {
+	float: right;
+}
+
+.approved, .pending {
+	padding: 20px;
+	width: 400px;
+}
+
+.pendingComment {
+	border-top: 1px dotted rgb(210, 210, 210);
+	font-size: 12px;
+	line-height: 14px;
+	margin: 0 0 8px 0;
+	padding: 5px 5px 0 5px;
+}
+
+.commentCreated {
+	color: rgb(140, 140, 140);
+	float: right;
+}
+
+.pendingCommentName {
+	color: rgb(140, 140, 140);
+	margin: 0 0 3px 0;
+}
+
+.commentApprove {
+	margin: 3px 0 0;
+}
+
+.commentApprove a {
+	color: rgb(48, 157, 207);
+}

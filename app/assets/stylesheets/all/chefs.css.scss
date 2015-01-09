@@ -1,0 +1,52 @@
+$gray: rgb(60, 60, 60);
+$max: 250px;
+$red: rgb(196, 43, 38);
+$tan: rgb(220, 169, 116);
+$white: rgb(235, 235, 235);
+@mixin test_settings {
+    background: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+
+.chefName {
+    background: $red;
+    color: $white;
+    font-family: Chinese, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    text-align: right;
+    a {
+        color: $white;
+    }
+}
+
+.chef {
+    margin: 0 0 20px 0;
+    .chefImage {
+        float: left;
+        overflow: hidden;
+        width: $max;
+        img {
+            max-height: $max;
+            vertical-align: bottom;
+        }
+    }
+    .chefInfo {
+        background: $tan;
+        color: $gray;
+        margin: 0 0 0 255px;
+        padding: 20px;
+        p {
+            font-size: 14px;
+            line-height: 21px;
+            margin: 0 0 14px 0;
+        }
+        p:last-child {
+            margin: 0;
+        }
+    }
+}
+
+.chef:last-child {
+    margin: 0;
+}

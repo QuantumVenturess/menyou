@@ -1,0 +1,88 @@
+.infoGroup {
+	color: rgb(60, 60, 60);
+	width: 260px;
+}
+
+.infoGroupLabel {
+	margin: 0 0 10px 0;
+}
+
+.leftBar, .rightBar {
+	border-top: 1px solid rgb(60, 60, 60);
+	height: 0;
+	position: relative;
+	top: 12px;
+	width: 80px;
+}
+
+.leftBar {
+	float: left;
+}
+
+.rightBar {
+	float: right;
+}
+
+.infoGroup h1 {
+	font-size: 22px;
+	font-weight: 300;
+	height: 22px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.groupInfo {
+	padding: 10px;
+}
+
+/* Hours */
+.hours {
+	margin: 0 auto;
+}
+
+.hours ul {
+	font-size: 14px;
+	list-style-type: none;
+	margin: 0;
+}
+
+.hours li {
+	margin: 0 0 5px 0;
+}
+
+.hours .weekday {
+	float: left;
+}
+
+.hours .time {
+	float: right;
+}
+
+/* Location */
+.locationAddress {
+	margin: 10px 0 0 0;
+}
+
+.locationAddress p {
+	font-size: 14px;
+	line-height: 14px;
+	margin: 0 0 5px 0;
+}
+
+.locationAddress a {
+	color: rgb(60, 60, 60);
+	font-size: 14px;
+	font-weight: 700;
+}
+
+/* Contact */
+.contact h2 {
+	font-size: 14px;
+	font-weight: 700;
+	margin: 0 0 5px 0;
+}
+
+.contact p {
+	font-size: 14px;
+	margin: 0 0 15px 0;
+}

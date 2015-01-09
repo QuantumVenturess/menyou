@@ -1,0 +1,45 @@
+/*
+.backgroundContainer {
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+
+.background {
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+
+#backgroundImage, #backgroundImage table, #backgroundImage td {
+	height: 100%;
+	overflow: hidden;
+	width: 100%;
+}
+
+#backgroundImage div {
+	height: 200%;
+	left: -50%;
+	position: absolute;
+	top: -50%;
+	width: 200%;
+	z-index: -200;
+}
+
+#backgroundImage td {
+	text-align: center;
+	vertical-align: middle;
+}
+
+#backgroundImage img {
+	margin: 0 auto;
+	min-height: 50%;
+	min-width: 51%;
+}
+*/

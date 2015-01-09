@@ -1,0 +1,16 @@
+<div class="chefName">
+    <% if signed_in? %>
+        <%= link_to chef.name, edit_chef_path(chef) %>
+    <% else %>
+        <%= chef.name %>
+    <% end %>
+</div>
+<div class="chef">
+    <div class="chefImage">
+        <%= image_tag chef.image.url %>
+    </div>
+    <div class="chefInfo">
+        <%= to_html(chef.info) %>
+    </div>
+    <div class="clear"></div>
+</div>

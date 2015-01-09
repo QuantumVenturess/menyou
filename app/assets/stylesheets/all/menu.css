@@ -1,0 +1,126 @@
+.menuContainer {
+	margin: 0 0 0 0;
+}
+
+/* Scroll top button */
+.topButton {
+	display: none;
+	position: fixed;
+	right: 0;
+	top: 0;
+	-webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+	-khtml-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+	-ms-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+	-o-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.toTop {
+	background: rgb(196, 43, 38);
+	display: block;
+	height: 30px;
+	padding: 5px;
+	width: 30px;
+}
+
+.toTop div {
+	border-bottom: 15px solid rgb(235, 235, 235);
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	margin: 5px 0 0 0;
+	height: 0;
+	width: 0;
+}
+
+/* Sidebar */
+.menuSidebar {
+	float: left;
+	width: 250px;
+}
+
+.fixed_50 {
+	position: fixed;
+	top: 50px;
+}
+
+.menuSidebar h1, .menu h1, .menuLink {
+	/* In the individual css files */
+}
+
+.menuSidebar h1, .menuCategories {
+	-webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+	-khtml-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+	-ms-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+	-o-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.menuCategories {
+	background: rgb(196, 43, 38);
+	padding: 10px 20px;
+}
+
+.menuCategories ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menuCategories a {
+	color: rgb(235, 235, 235);
+	display: block;
+	font-size: 15px;
+	padding: 5px 0;
+}
+
+.menuCategories a:hover {
+	color: rgb(60, 60, 60);
+}
+
+.menuCategories a.selected {
+	color: rgb(60, 60, 60);
+}
+
+/* Menu */
+.menus {
+	float: right;
+	width: 705px;
+}
+
+.menu {
+	margin: 0 0 10px 0;
+}
+
+.menu h1, .menuLink {
+	text-align: right;
+}
+
+.menu h1 {
+	margin: 0 0 5px 0;
+}
+
+.menuLink {
+	display: block;
+}
+
+.menuLink:hover {
+	color: rgb(235, 235, 235);
+}
+
+.categoryImage {
+	height: 200px;
+	width: 705px;
+}
+
+.categoryImage div {
+	height: 200px;
+	overflow: hidden;
+	position: absolute;
+	width: 705px;
+}
+
+.categoryImage img {
+	max-width: 705px;
+}

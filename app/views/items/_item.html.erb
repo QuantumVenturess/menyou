@@ -1,0 +1,35 @@
+<div class="item <%= cycle('odd', 'even') %>">
+	<div class="itemImage">
+		<div>
+			<%= link_to(item.image.url, title:"#{item.name}") do %>
+				<%= image_tag '/assets/default.jpg', class: 'lazyLoad', 'data-original' => item.image.url %>
+			<% end %>
+		</div>
+	</div>
+	<div class="itemName">
+		<% if signed_in? %>
+			<p><%= link_to item.name, edit_item_path(item), title: 'Edit item' %></p>
+		<% else %>
+			<p><%= item.name %></p>
+		<% end %>
+	</div>
+	<div class="itemPrice">
+		<% if !item.small_price.blank? %>
+			<div class="largePrice">
+				L: <b><%= number_to_currency(item.large_price) %></b>
+			</div>
+			<div class="smallPrice">
+				S: <b><%= number_to_currency(item.small_price) %></b>
+			</div>
+		<% elsif !item.large_price.blank? %>
+			<div class="largePrice">
+				<b><%= number_to_currency(item.large_price) %></b>
+			</div>
+		<% end %>
+		<% if item.spicy? %>
+			<div class="spicy">
+				Spicy
+			</div>
+		<% end %>
+	</div>
+</div>
